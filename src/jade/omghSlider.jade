@@ -1,0 +1,9 @@
+.slider
+  .slide(ng-repeat='image in images', ng-show='image.visible')
+    img.akslide(ng-src='{{image.src}}')
+    .laye1
+    h2 {{image.mtn}}
+    .laye2
+    .laye3
+  .arrows
+    button.dogme.ion-chevron-right.i-gerd.i-firoz(ng-click='next(false)')

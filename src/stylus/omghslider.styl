@@ -1,0 +1,226 @@
+.slider
+  position relative
+  height 100%
+  overflow hidden
+  .slide
+    position absolute
+    top 0
+    right 0
+    width 100%
+    height 100%
+    img
+      width 100%
+      box-shadow 0px 25px 200px #000
+    h2
+      position absolute
+      top 86.7%
+      width 100%
+      text-align center
+      color darken(abi(1), 50%)
+      z-index 2
+      &:before
+        content '|'
+        font-size 2rem
+        margin 0 1rem
+      &:after
+        content '|'
+        font-size 2rem
+        margin 0 1rem
+    .laye1
+      position absolute
+      background lighten(bezh(1), 85%)
+      width 100%
+      height 100%
+      top 87.7%
+    .laye2
+      position absolute
+      background lighten(ghermez(1), 30%)
+      width 100%
+      height 110%
+      top 98.6%
+    .laye3
+      position absolute
+      background darken(abi(1), 10%)
+      width 100%
+      height 140%
+      top 99.4%
+  .arrows
+    position absolute
+    top 50%
+    right 0.8rem
+    z-index 3
+    opacity 0.5
+    &:hover
+      opacity 1
+
+// poyanmeaeish
+.slide
+  &.ng-hide-add,
+  &.ng-hide-add-active
+    transition all 5000ms ease-out
+    img
+      animation khamosh 5000ms
+    h2
+      animation khamoshH2i 5000ms
+    .laye1
+      animation khorojBeBalla1 5000ms
+    .laye2
+      animation khorojBeBalla2 5000ms
+    .laye3
+      animation khorojBeBalla3 5000ms
+  &.ng-hide-remove,
+  &.ng-hide-remove-active
+    transition all 5000ms ease-in
+    z-index 2
+    img
+      animation khamosh2 5000ms
+    h2
+      animation khamoshH2 5000ms
+    .laye1
+      animation biaBalla1 5000ms
+    .laye2
+      animation biaBalla2 5000ms
+    .laye3
+      animation biaBalla3 5000ms
+
+// .slide.ng-hide-add,
+// .slide.ng-hide-remove
+//   display block!important
+
+@keyframes khorojBeBalla1
+  0%
+    z-index 1
+    transform translate3d(0, 0, 0)
+  40%
+    z-index 1
+    transform translate3d(0, -230%, 0)
+  100%
+    z-index 1
+    transform translate3d(0, -230%, 0)
+
+@keyframes khorojBeBalla2
+  0%
+    z-index 3
+    transform translate3d(0, 0, 0)
+  3%
+    z-index 3
+    transform translate3d(0, 0, 0)
+  36%
+    z-index 3
+    transform translate3d(0, -230%, 0)
+  100%
+    z-index 3
+    transform translate3d(0, -230%, 0)
+
+@keyframes khorojBeBalla3
+  0%
+    z-index 3
+    transform translate3d(0, 0, 0)
+  6%
+    z-index 3
+    transform translate3d(0, 0, 0)
+  32%
+    z-index 3
+    transform translate3d(0, -230%, 0)
+  100%
+    z-index 3
+    transform translate3d(0, -230%, 0)
+
+
+@keyframes biaBalla1
+  0%
+    z-index 2
+    transform translate3d(0, 100%, 0)
+  13%
+    z-index 2
+    transform translate3d(0, 100%, 0)
+  33%
+    z-index 2
+    transform translate3d(0, 0, 0)
+  100%
+    z-index 2
+    transform translate3d(0, 0, 0)
+
+@keyframes biaBalla2
+  0%
+    z-index 3
+    transform translate3d(0, 100%, 0)
+  18%
+    z-index 3
+    transform translate3d(0, 100%, 0)
+  35%
+    z-index 3
+    transform translate3d(0, -9.5%, 0)
+  43%
+    z-index 3
+    transform translate3d(0, -9.5%, 0)
+  52%
+    z-index 3
+    transform translate3d(0, 0, 0)
+  100%
+    z-index 3
+    transform translate3d(0, 0, 0)
+
+@keyframes biaBalla3
+  0%
+    z-index 3
+    transform translate3d(0, 100%, 0)
+  23%
+    z-index 3
+    transform translate3d(0, 100%, 0)
+  35%
+    z-index 3
+    transform translate3d(0, -7.5%, 0)
+  40%
+    z-index 3
+    transform translate3d(0, -7.5%, 0)
+  53%
+    z-index 3
+    transform translate3d(0, 0, 0)
+  100%
+    z-index 3
+    transform translate3d(0, 0, 0)
+
+@keyframes khamosh
+  0%
+    z-index 3
+    opacity 100 !important
+  5%
+    z-index 3
+    opacity 100 !important
+  7%
+    opacity 0 !important
+  100%
+    opacity 0 !important
+
+@keyframes khamosh2
+  0%
+    z-index 1
+    opacity 0
+  10%
+    z-index 1
+    opacity 0
+  12%
+    z-index 1
+    opacity 100
+  100%
+    z-index 1
+    opacity 100
+
+@keyframes khamoshH2
+  0%
+    opacity 0
+  45%
+    opacity 0
+  46%
+    opacity 100
+  100%
+    opacity 100
+
+@keyframes khamoshH2i
+  0%
+    opacity 100!important
+  2%
+    opacity 0!important
+  100%
+    opacity 0!important
